@@ -8,5 +8,4 @@ RUN pip install --upgrade ooniprobe
 
 RUN mkdir ~/.ooni
 ADD ooniprobe.conf ~/.ooni/
-RUN ooniresources --update-inputs --update-geoip
 RUN oonideckgen --country-code MY --output ~/
